@@ -1,5 +1,7 @@
 # StellarDust
 
+[Made With AI until I get Better at Coding]; Tool Creator for Existence Eco-System
+
 StellarDust est l’univers de conception d’Existence : un atelier séparé où les outils et capacités sont construits, validés, versionnés puis publiés comme ressources partageables avec Nebula, Atlas et les autres univers.
 
 ## Utilisation (v0.4)
