@@ -1,0 +1,2 @@
+/usr/bin/ar qc libStellarDustCore.a CMakeFiles/StellarDustCore.dir/src/stardust_core.cpp.o
+/usr/bin/ranlib libStellarDustCore.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/stardust-core.dir/link.d "CMakeFiles/stardust-core.dir/src/stardust_core_cli.cpp.o" -o stardust-core  libStellarDustCore.a

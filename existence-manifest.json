@@ -1,0 +1,45 @@
+{
+  "protocol": "existence.contract.v1",
+  "id": "stardust",
+  "name": "StellarDust",
+  "version": "0.4.0",
+  "entity_type": "universe",
+  "ecosystem_id": "existence",
+  "lifecycle_state": "available",
+  "capabilities": [
+    "creator_host",
+    "fusion_creator",
+    "brush_engine_creator",
+    "resource_authoring",
+    "resource_validation",
+    "stardust_core_native",
+    "creator_interface_host",
+    "document_files"
+  ],
+  "resource_namespace": "resource://existence/stardust",
+  "resource_types": [
+    "brush_engine",
+    "blend_definition",
+    "blend_result",
+    "palette",
+    "gradient",
+    "module",
+    "project"
+  ],
+  "permissions": [
+    "read_resource",
+    "write_resource",
+    "reference_resource",
+    "send_message"
+  ],
+  "transport": {
+    "mode": "embedded_view",
+    "ipc": "in_process_host"
+  },
+  "view": {
+    "embeddable": true,
+    "mode": "qt_widget",
+    "protocol": "existence.view.v1"
+  },
+  "dependencies": []
+}

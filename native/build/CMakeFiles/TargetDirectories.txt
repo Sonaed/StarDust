@@ -1,0 +1,4 @@
+/home/deanos/Documents/StarDust/native/build/CMakeFiles/StellarDustCore.dir
+/home/deanos/Documents/StarDust/native/build/CMakeFiles/stardust-core.dir
+/home/deanos/Documents/StarDust/native/build/CMakeFiles/edit_cache.dir
+/home/deanos/Documents/StarDust/native/build/CMakeFiles/rebuild_cache.dir

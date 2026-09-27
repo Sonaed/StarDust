@@ -1,0 +1,415 @@
+{
+  "application": "StellarDust",
+  "state_version": 4,
+  "build": "0.4.0-creators",
+  "saved_at": "2026-09-27T08:30:59",
+  "last_creator": "brush_engine",
+  "recent": [
+    "/home/deanos/Documents/Ressources/Brush/pencil-brush.csbr"
+  ],
+  "creators": {
+    "brush_engine": {
+      "definition": {
+        "name": "Pencil Brush",
+        "description": "",
+        "author": "Deanos",
+        "tags": "croquis, sketch",
+        "compatibility": "Nebula",
+        "outputs": "brush_engine"
+      },
+      "content": {
+        "graph": {
+          "nodes": [
+            {
+              "id": "input",
+              "type": "Input",
+              "title": "Entrée",
+              "config": {
+                "source": "pressure",
+                "gain": 1.0,
+                "curve": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ],
+                "min": 0.0,
+                "max": 1.0
+              },
+              "x": 0.0,
+              "y": 0.0
+            },
+            {
+              "id": "condition",
+              "type": "Condition",
+              "title": "Condition",
+              "config": {
+                "test": "au-dessus",
+                "a": 0.87,
+                "b": 0.8,
+                "soft": 0.05,
+                "output": "laisser passer"
+              },
+              "x": 272.0,
+              "y": 0.0
+            },
+            {
+              "id": "shape",
+              "type": "Shape",
+              "title": "Forme",
+              "config": {
+                "sizeScale": 1.5,
+                "roundness": 1.0,
+                "angle": 0.0,
+                "spacing": 0.15,
+                "hardness": 0.8
+              },
+              "x": 544.0,
+              "y": 0.0
+            },
+            {
+              "id": "output",
+              "type": "Output",
+              "title": "Sortie",
+              "config": {
+                "resource_type": "brush_engine"
+              },
+              "x": 1088.0,
+              "y": 0.0
+            },
+            {
+              "id": "scatter",
+              "type": "Scatter",
+              "title": "Dispersion",
+              "config": {
+                "scatter": 0.2,
+                "sizeJitter": 0.68,
+                "randomOpacity": 0.0,
+                "rotationJitter": 44.0
+              },
+              "x": 816.0,
+              "y": 0.0
+            }
+          ],
+          "connections": [
+            {
+              "from": "input",
+              "to": "condition"
+            },
+            {
+              "from": "condition",
+              "to": "shape"
+            },
+            {
+              "from": "shape",
+              "to": "scatter"
+            },
+            {
+              "from": "scatter",
+              "to": "output"
+            }
+          ]
+        },
+        "engine": {
+          "size": 10.0,
+          "opacity": 1.0,
+          "flow": 1.0,
+          "hardness": 0.8,
+          "spacing": 0.15,
+          "roundness": 1.0,
+          "angle": 0.0,
+          "scatter": 0.0,
+          "sizeJitter": 0.0,
+          "rotationJitter": 0.0,
+          "minimumSize": 0.01,
+          "minimumOpacity": 0.0,
+          "minimumFlow": 0.0,
+          "velocitySize": 0.0,
+          "velocityOpacity": 0.0,
+          "velocityFlow": 0.0,
+          "tiltSize": 0.0,
+          "tiltOpacity": 0.0,
+          "randomSize": 0.0,
+          "randomOpacity": 0.0,
+          "velocitySpacing": 0.0,
+          "pressureSize": true,
+          "pressureOpacity": false,
+          "pressureFlow": false,
+          "textureStrength": 0.0,
+          "textureScale": 1.0,
+          "textureRandomScale": 0.0,
+          "textureRandomOffset": 0.0,
+          "textureBrightness": 0.0,
+          "textureContrast": 1.0,
+          "textureMirror": false,
+          "textureAffectOpacity": true,
+          "hueJitter": 0.0,
+          "saturationJitter": 0.0,
+          "brightnessJitter": 0.0,
+          "gradientAmount": 0.0,
+          "dirtyColor": false,
+          "strokeGradient": false,
+          "linearGradient": true,
+          "radialGradient": false,
+          "paintMix": 1.0,
+          "wetness": 0.0,
+          "pickup": 0.0,
+          "dilution": 0.0,
+          "smudge": 0.0,
+          "paintPersistence": 1.0,
+          "colorCarry": 1.0,
+          "wetMix": false,
+          "sampleCanvas": true,
+          "tiltAngle": 0.0,
+          "adaptiveSpacing": false,
+          "pressureSpacing": 0.0,
+          "gradientColor": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "blendMode": 0,
+          "smoothMode": 0,
+          "smudgeTool": false,
+          "eraser": false,
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ]
+        },
+        "exposed": [
+          "size"
+        ],
+        "bench": {}
+      },
+      "resources": [],
+      "doc_path": "/home/deanos/Documents/Ressources/Brush/pencil-brush.csbr",
+      "dirty": true
+    },
+    "blend": {
+      "definition": {
+        "name": "Nouveau mélange",
+        "description": "",
+        "author": "",
+        "tags": "",
+        "compatibility": "Nebula",
+        "outputs": "blend_definition"
+      },
+      "content": {
+        "graph": {
+          "nodes": [
+            {
+              "id": "input",
+              "type": "Input",
+              "title": "Entrée",
+              "config": {
+                "source": "layer",
+                "gain": 1.0,
+                "curve": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    1.0
+                  ]
+                ],
+                "min": 0.0,
+                "max": 1.0
+              },
+              "x": 0.0,
+              "y": 0.0
+            },
+            {
+              "id": "blend",
+              "type": "Blend",
+              "title": "Fusion",
+              "config": {
+                "mode": "screen",
+                "channel": "G",
+                "contribution": 0.8
+              },
+              "x": 265.0,
+              "y": -51.7
+            },
+            {
+              "id": "mask",
+              "type": "Mask",
+              "title": "Masque",
+              "config": {
+                "amount": 1.0,
+                "source": "layer"
+              },
+              "x": 540.0,
+              "y": 0.0
+            },
+            {
+              "id": "output",
+              "type": "Output",
+              "title": "Sortie",
+              "config": {
+                "resource_type": "blend_definition"
+              },
+              "x": 810.0,
+              "y": 0.0
+            },
+            {
+              "id": "blend_2",
+              "type": "Blend",
+              "title": "Fusion",
+              "config": {
+                "mode": "multiply",
+                "channel": "B",
+                "contribution": 1.0
+              },
+              "x": 272.0,
+              "y": 208.0
+            },
+            {
+              "id": "condition",
+              "type": "Condition",
+              "title": "Condition",
+              "config": {
+                "test": "au-dessus",
+                "a": 0.5,
+                "b": 0.8,
+                "soft": 0.05,
+                "output": "laisser passer"
+              },
+              "x": 272.0,
+              "y": 64.0
+            }
+          ],
+          "connections": [
+            {
+              "from": "blend",
+              "to": "mask"
+            },
+            {
+              "from": "mask",
+              "to": "output"
+            },
+            {
+              "from": "input",
+              "to": "blend"
+            },
+            {
+              "from": "input",
+              "to": "blend_2"
+            },
+            {
+              "from": "blend_2",
+              "to": "mask"
+            }
+          ]
+        },
+        "engine": {
+          "mode": "hard_light",
+          "channel": "RGB"
+        },
+        "exposed": [
+          "mode",
+          "channel",
+          "contribution",
+          "mask"
+        ],
+        "bench": {
+          "mode": "multiply",
+          "result": {
+            "width": 420,
+            "height": 260,
+            "valid": true
+          }
+        }
+      },
+      "resources": [],
+      "doc_path": "",
+      "dirty": true
+    },
+    "palette_creator": {
+      "definition": {
+        "name": "Nouvelle palette",
+        "description": "",
+        "author": "",
+        "tags": "",
+        "compatibility": "Nebula",
+        "outputs": "palette"
+      },
+      "content": {
+        "colors": [
+          {
+            "hex": "#1B1F3B",
+            "name": ""
+          },
+          {
+            "hex": "#3E4A89",
+            "name": ""
+          },
+          {
+            "hex": "#8C9EFF",
+            "name": ""
+          },
+          {
+            "hex": "#F5C56B",
+            "name": ""
+          },
+          {
+            "hex": "#FF7A8A",
+            "name": ""
+          }
+        ],
+        "columns": 8
+      },
+      "resources": [],
+      "doc_path": "",
+      "dirty": false
+    },
+    "gradient_creator": {
+      "definition": {
+        "name": "Nouveau dégradé",
+        "description": "",
+        "author": "",
+        "tags": "",
+        "compatibility": "Nebula",
+        "outputs": "gradient"
+      },
+      "content": {
+        "stops": [
+          {
+            "pos": 0.0,
+            "hex": "#0B1224",
+            "alpha": 1.0
+          },
+          {
+            "pos": 0.55,
+            "hex": "#3E4A89",
+            "alpha": 1.0
+          },
+          {
+            "pos": 1.0,
+            "hex": "#8C9EFF",
+            "alpha": 1.0
+          }
+        ],
+        "interpolation": "Perceptuel (OKLab)",
+        "preview": {
+          "type": "linéaire",
+          "angle": 0.0,
+          "repeat": "aucune",
+          "scale": 1.0
+        }
+      },
+      "resources": [],
+      "doc_path": "",
+      "dirty": false
+    }
+  }
+}
