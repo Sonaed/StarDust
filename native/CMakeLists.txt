@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(StarDustCore LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_library(StarDustCore STATIC src/stardust_core.cpp)
+target_include_directories(StarDustCore PUBLIC include)
+add_executable(stardust-core src/stardust_core_cli.cpp)
+target_link_libraries(stardust-core PRIVATE StarDustCore)

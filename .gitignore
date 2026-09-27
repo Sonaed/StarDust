@@ -1,0 +1,15 @@
+_avant*/
+*.avant-renommage/
+_backup*/
+*_backup.py
+*.before_*
+build-*/
+build/
+build_*/
+Claude outputs/
+.compat_test_py313/
+dist/
+*.pyc
+__pycache__/
+stardust_state.json
+.venv/
