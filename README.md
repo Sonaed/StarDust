@@ -43,7 +43,7 @@ Débrancher le module le retire de l'atelier. Tout futur module qui déclare `in
 Compiler d’abord le moteur natif :
 
 ```bash
-/home/deanos/Documents/StarDust/build_core.sh
+/StarDust/build_core.sh
 ```
 
 Puis lancer StellarDust :
@@ -53,3 +53,7 @@ python3 /home/deanos/Documents/StarDust/main.py
 ```
 
 Le graphe et son état critique sont portés par `StellarDustCore` en C++. Python/PySide6 ne fait que présenter et orchestrer l’éditeur. Si le moteur n’est pas compilé, l’interface reste en mode de secours et l’indique dans la barre d’état.
+
+<img width="2559" height="1410" alt="image" src="https://github.com/user-attachments/assets/8e95e973-3056-4482-9560-9f5404d31116" />
+
+<img width="439" height="282" alt="image" src="https://github.com/user-attachments/assets/c6349fcd-be42-4573-94c4-186a89efedf7" />
